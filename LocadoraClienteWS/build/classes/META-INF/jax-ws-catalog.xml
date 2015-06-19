@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/LocadoraProviderWS/LocadoraProviderWS?wsdl" uri="wsdl/localhost_8080/LocadoraProviderWS/LocadoraProviderWS.wsdl"/>
+    <system systemId="http://localhost:8080/LocadoraProviderWS/LocadoraProviderWS?xsd=1" uri="wsdl/localhost_8080/LocadoraProviderWS/LocadoraProviderWS.xsd_1.xsd"/>
+    <system systemId="http://192.168.92.56:8080/WSReservaRestaurante/WSReservaRestaurante?WSDL" uri="wsdl/192.168.92.56_8080/WSReservaRestaurante/WSReservaRestaurante.wsdl"/>
+    <system systemId="http://192.168.92.56:8080/WSReservaRestaurante/WSReservaRestaurante?xsd=1" uri="wsdl/192.168.92.56_8080/WSReservaRestaurante/WSReservaRestaurante.xsd_1.xsd"/>
+</catalog>

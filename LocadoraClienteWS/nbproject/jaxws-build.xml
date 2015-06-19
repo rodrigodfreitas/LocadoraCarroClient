@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${libs.jaxws21.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-LocadoraProviderWS" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/LocadoraProviderWS"/>
+        <property name="wsdl-LocadoraProviderWS" location="xml-resources/web-service-references/LocadoraProviderWS/wsdl/localhost_8080/LocadoraProviderWS/LocadoraProviderWS.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/LocadoraProviderWS" destdir="${build.generated.dir}/jax-wsCache/LocadoraProviderWS" wsdl="${wsdl-LocadoraProviderWS}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/LocadoraProviderWS/LocadoraProviderWS?wsdl" xnocompile="true" xendorsed="true" package="com.pos.services">
+            <depends file="${wsdl-LocadoraProviderWS}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/LocadoraProviderWS"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/LocadoraProviderWS">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-LocadoraProviderWS" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/LocadoraProviderWS"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/pos/services"/>
+    </target>
+    <target name="wsimport-client-WSReservaRestaurante" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/WSReservaRestaurante"/>
+        <property name="wsdl-WSReservaRestaurante" location="xml-resources/web-service-references/WSReservaRestaurante/wsdl/192.168.92.56_8080/WSReservaRestaurante/WSReservaRestaurante.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/WSReservaRestaurante" destdir="${build.generated.dir}/jax-wsCache/WSReservaRestaurante" wsdl="${wsdl-WSReservaRestaurante}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://192.168.92.56:8080/WSReservaRestaurante/WSReservaRestaurante?WSDL" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-WSReservaRestaurante}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/WSReservaRestaurante"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/WSReservaRestaurante">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-WSReservaRestaurante" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/WSReservaRestaurante"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/webservicesexternos"/>
+    </target>
+    <target name="wsimport-client-WSExterno" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/WSExterno"/>
+        <property name="wsdl-WSExterno" location="xml-resources/web-service-references/WSExterno/wsdl/192.168.92.1_8080/WSExterno/WSExterno.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/WSExterno" destdir="${build.generated.dir}/jax-wsCache/WSExterno" wsdl="${wsdl-WSExterno}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://192.168.92.1:8080/WSExterno/WSExterno?wsdl" xnocompile="true" xendorsed="true" package="com.pos.services">
+            <depends file="${wsdl-WSExterno}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/WSExterno"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/WSExterno">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-WSExterno" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/WSExterno"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/pos/services"/>
+    </target>
+    <target name="wsimport-client-WSServices" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/WSServices"/>
+        <property name="wsdl-WSServices" location="xml-resources/web-service-references/WSServices/wsdl/192.168.92.50_8080/ServicosDePassagensWS/WSServices.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/WSServices" destdir="${build.generated.dir}/jax-wsCache/WSServices" wsdl="${wsdl-WSServices}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://192.168.92.50:8080/ServicosDePassagensWS/WSServices?wsdl" xnocompile="true" xendorsed="true" package="com.pos.services">
+            <depends file="${wsdl-WSServices}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/WSServices"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/WSServices">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-WSServices" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/WSServices"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/pos/services"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-LocadoraProviderWS, wsimport-client-WSReservaRestaurante, wsimport-client-WSExterno, wsimport-client-WSServices"/>
+</project>
